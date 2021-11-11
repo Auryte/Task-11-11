@@ -1,0 +1,65 @@
+.ButtonContainer {
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 10px grey;
+  height: 80px;
+  margin: 0 auto;
+  align-items: right;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.9;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10%;
+}
+.PostsContainer{
+  width: 90%;
+  margin: auto;
+  margin-top: 80px;
+}
+.PostCard{
+  display: grid;
+  grid-template-rows: minmax(auto, 1fr);
+  background-color: #ecebeb;
+  box-shadow: 0 0 3px grey;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.PostCard:hover{
+   background-color: lightgray;
+  }
+  .PostTitle{
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.2rem;
+  }
+  .PostBody{
+    margin: 0;
+    padding: 20px;
+  }
+.PostLink{
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+  @media screen and (min-width: 800px) {
+    .PostsContainer{
+      width: 80%;
+      margin-top: 70px;
+    }
+    .PostCard{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: minmax(100px, 1fr);
+      background-color: rgb(236, 235, 235);
+      box-shadow: 0 0 3px grey;
+      cursor: pointer;
+      text-align: left;
+    }
+    .PostTitle{
+      border-right: 1px solid lightgray;
+      border-bottom: none;
+    }
+  }

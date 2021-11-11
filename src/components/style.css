@@ -1,0 +1,138 @@
+
+main {
+  padding-top: 60px;
+  min-height: calc(100vh - 110px);
+  /* min-height: 100vh; */
+
+}
+header {
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 10px grey;
+  height: 80px;
+  margin: 0 auto;
+  align-items: right;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.9;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10%;
+}
+.Button{
+  padding: 8px 30px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgb(36, 36, 36);
+  background-color: #3d67b2;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.8rem;
+}
+.ButtonDisabled{
+  padding: 8px 30px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px rgb(36, 36, 36);
+  background-color: #52565c;
+  color: lightgrey;
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 0.8rem;
+}
+.Button:hover{
+  background-color: #1d3b6e;
+}
+
+.FormGroupInput{
+  width: 100%;
+   margin-bottom: 0.25rem;
+}
+.FromGroupLabel {
+ display: block;
+ margin-bottom: 0.25rem;
+}
+
+.PopupBox {
+  position: fixed;
+  background: #0000005d;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ .PopupContentTitle{
+   margin-top: 5px;
+ }
+.Box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+  border-radius: 3px;
+}
+ 
+.PopupButton{
+  padding: 12px 40px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgb(36, 36, 36);
+  background-color: #3d67b2;
+  color: whitesmoke;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  color: whitesmoke;
+  box-shadow: 0 0 10px grey;
+  height: 100px;
+  margin: 10px auto 0 0;
+  align-items: right;
+  z-index: 2;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 600px){
+.Box {
+  width: 50%;
+}
+.Button{
+  padding: 12px 40px;
+  font-size: 1rem;
+}
+.ButtonDisabled{
+  padding: 12px 40px;
+  font-size: 1rem;
+}
+}
+@media screen and (min-width: 1200px){
+.Box {
+  width: 25%;
+}
+}

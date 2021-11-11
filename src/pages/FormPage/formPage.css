@@ -1,0 +1,83 @@
+.FormContainer{
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: repeat(1fr 1fr);
+}
+.FormContainer h3{
+  text-transform: uppercase;
+}
+.FormDetailsCard{
+  background-color: rgb(236, 235, 235);
+  box-shadow: 0 0 3px grey;
+  text-align: center;
+  padding: 20px;
+}
+.FromDetailsLabel {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+input{
+width: 100%;
+padding: 6px 0;
+}
+.Container h3{
+font-size: 1.7rem;
+text-align: center;
+}
+  .Textarea{
+    padding: 6px 0;
+    float: none;
+    width: 100%;
+    min-height: 170px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+  }
+
+.FormButton{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 8px 25px;
+    border-radius: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+    width: 40%;
+  }
+  
+    .Message{
+     height: 50px;
+     padding: 10px 0;
+     margin: auto;
+    }
+    .Message h4{
+      margin: 0;
+      color: red;
+     }
+    @media screen and (min-width: 800px) {
+      .FormContainer{
+        width: 60%;
+        margin-top: 80px;
+        }
+      .FormDetailsCard{
+        display: grid;
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+        height: fit-content;
+        text-align: left;
+      }
+      .Textarea{
+        min-height: 100px;
+       }
+       .FormButton{
+        font-size: 15px;
+        padding: 8px 30px;
+        margin: 20px auto;
+        width: 30%;
+      }
+      
+    }
+    
